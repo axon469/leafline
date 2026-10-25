@@ -6,7 +6,7 @@
 
 **Turn a plain-text novel into a chapter-organized EPUB, entirely in your browser.**
 
-![Version](https://img.shields.io/badge/version-1.3.2-6AC8A0?style=flat-square)
+![Version](https://img.shields.io/badge/version-1.3.3-6AC8A0?style=flat-square)
 ![Privacy](https://img.shields.io/badge/privacy-no%20server%20upload-6AC8A0?style=flat-square)
 ![Output](https://img.shields.io/badge/output-EPUB-F2AE6E?style=flat-square)
 ![Built with](https://img.shields.io/badge/built%20with-React%20%C2%B7%20Vite%20%C2%B7%20Tailwind-0E1019?style=flat-square)
@@ -104,7 +104,7 @@ txt-to-epub-converter/
 
 ## Changelog
 
-See [CHANGELOG.md](CHANGELOG.md). The current release is **1.3.2 — Foundation and detection improvements**.
+See [CHANGELOG.md](CHANGELOG.md). The current release is **1.3.3 — Chapter detection accuracy**.
 
 ## Contributing
 
