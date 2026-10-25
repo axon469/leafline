@@ -6,12 +6,12 @@
 
 **Turn a plain-text novel into a chapter-organized EPUB, entirely in your browser.**
 
-![Version](https://img.shields.io/badge/version-1.3.1-6AC8A0?style=flat-square)
+![Version](https://img.shields.io/badge/version-1.3.2-6AC8A0?style=flat-square)
 ![Privacy](https://img.shields.io/badge/privacy-no%20server%20upload-6AC8A0?style=flat-square)
 ![Output](https://img.shields.io/badge/output-EPUB-F2AE6E?style=flat-square)
 ![Built with](https://img.shields.io/badge/built%20with-React%20%C2%B7%20Vite%20%C2%B7%20Tailwind-0E1019?style=flat-square)
 
-[Live Demo](https://axon469.github.io/leafline/) · [Changelog](CHANGELOG.md) · [Report a Bug](../../issues)
+[Live Demo](https://<your-username>.github.io/txt-to-epub-converter/) · [Changelog](CHANGELOG.md) · [Report a Bug](../../issues)
 
 </div>
 
@@ -48,10 +48,10 @@ Your text and cover image are processed locally. Nothing is uploaded to a server
 
 | Method | Best for |
 | --- | --- |
-| **Auto** | Most novels. Prefers a reliable numbered heading sequence, then falls back. |
+| **Auto** | Most files. Tries, in order: Chinese headings → English headings → explicit separator lines → Markdown headings → blank-line structure → fixed lines (last resort only). |
 | **Chinese chapters** | Files using headings like `第12章` or `第十二章`. |
 | **English chapters** | Files using headings like `Chapter 12: Title`. |
-| **Separators** | Files where chapters are divided by runs of blank lines. |
+| **Separators** | Files divided by separator lines (`***`, `---`, `===`) or by runs of blank lines. |
 | **Fixed lines** | Files with no headings; always splits every set number of lines. |
 | **Manual** | Starting from fixed-line sections when you want full control. |
 
@@ -104,7 +104,7 @@ txt-to-epub-converter/
 
 ## Changelog
 
-See [CHANGELOG.md](CHANGELOG.md). The current release is **1.3.1 — Logo and bug-fix release**.
+See [CHANGELOG.md](CHANGELOG.md). The current release is **1.3.2 — Foundation and detection improvements**.
 
 ## Contributing
 
