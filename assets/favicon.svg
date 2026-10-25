@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Leafline logo">
+  <title>Leafline</title>
+  <rect rx="112" fill="#0E1019"/>
+  <path d="M132 380C132 218 252 120 394 118C396 262 304 380 132 380Z" fill="#6AC8A0"/>
+  <path d="M196 316L350 162" stroke="#0E1019" stroke-width="16" stroke-linecap="round"/>
+  <path d="M104 408L196 316" stroke="#F2AE6E" stroke-width="24" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 320" width="1100" height="320" role="img" aria-label="Leafline — TXT to EPUB Converter">
+  <title>Leafline — TXT to EPUB Converter</title>
+  <rect width="1100" height="320" rx="40" fill="#0E1019"/>
+  <g transform="translate(48 48) scale(0.4375)">
+    <rect width="512" height="512" rx="112" fill="#161A26"/>
+    <path d="M132 380C132 218 252 120 394 118C396 262 304 380 132 380Z" fill="#6AC8A0"/>
+    <path d="M196 316L350 162" stroke="#161A26" stroke-width="16" stroke-linecap="round"/>
+    <path d="M104 408L196 316" stroke="#F2AE6E" stroke-width="24" stroke-linecap="round"/>
+  </g>
+  <text x="310" y="178" font-family="'Instrument Serif', Georgia, 'Times New Roman', serif" font-size="108" fill="#F3EEE4">Leafline</text>
+  <text x="314" y="232" font-family="'DM Mono', ui-monospace, Menlo, Consolas, monospace" font-size="26" letter-spacing="5" fill="#6AC8A0">TXT TO EPUB CONVERTER</text>
+</svg>
