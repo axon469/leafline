@@ -30,12 +30,8 @@ Leafline is a growing set of separate tools. Each one has its own page, inputs, 
 | Tool | Status | Address |
 | --- | --- | --- |
 | **TXT to EPUB** | Available | `#/tools/txt-to-epub` |
-| **Text to PDF** | Planned | — |
 | **EPUB to TXT** | Planned | — |
 
-**Navigation.** Two destinations are always available: **Home** (the tools catalogue) and **Settings** (website-wide preferences). Routes use the URL hash, so the site works on any static host, including GitHub Pages, and browser back/forward and direct links work.
-
-**Adding a tool.** Build the tool as its own component, then add one entry to the `LF_TOOLS` registry in `index.html`. Set `status: "available"` to make it openable; `"soon"` lists it without a link.
 
 ## TXT to EPUB
 
@@ -92,31 +88,25 @@ python3 -m http.server 8000
 
 Because the app is a single static page, it works on any static host.
 
-**GitHub Pages:** go to **Settings → Pages**, choose your default branch and the `/ (root)` folder, then save.
 
 ## Repository Structure
 
 ```text
 txt-to-epub-converter/
-├── index.html          # The converter (single-file production build)
-├── CHANGELOG.md        # Version history
+├── index.html       
+├── CHANGELOG.md      # Version history
 ├── README.md
 └── assets/
-    ├── logo.svg                # App logo (vector)
-    ├── logo.png                # App logo (512 × 512)
-    ├── logo-wordmark.svg       # Logo with name, horizontal layout
+    ├── logo.svg                
+    ├── logo.png                
+    ├── logo-wordmark.svg       
     ├── logo-wordmark.png
     ├── favicon.svg
     ├── favicon-64.png
-    ├── apple-touch-icon.png    # 180 × 180 home-screen icon
-    └── social-preview.png      # 1280 × 640 repository social image
+    ├── apple-touch-icon.png    
+    └── social-preview.png      
 ```
 
-## Tech Stack
-
-- **React** and **Vite** for the interface and build
-- **Tailwind CSS** for styling
-- **Manrope**, **Cormorant Garamond**, **DM Mono**, and **Noto Sans SC** for typography
 
 ## Changelog
 
