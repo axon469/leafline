@@ -1,9 +1,30 @@
 # Changelog
 
-This website has **8 identifiable converter versions** in the available commit
+This website has **9 identifiable converter versions** in the available commit
 history. Version names and Android-style version codes below are a proposed
 mapping; this is a React/Vite website, not a native Android app, so these are
 not APK releases.
+
+## 1.3.5 — 2026-10-28
+**Website redesign and fast navigation**
+- **Version code:** 9
+- Leafline is now a multi-tool website. A new **Home** page lists every tool as
+  a card; each tool lives at its own address (`#/tools/txt-to-epub`) so links,
+  refresh, and the browser's back and forward buttons all work.
+- Added persistent two-destination navigation: **Home** and **Settings**. It is
+  a floating bar at the top on desktop and a bottom tab dock on mobile, with
+  icons and a clear active state. Home stays active while a tool is open.
+- Added a **Settings** page for the whole website: text size, reduced motion,
+  a privacy note, version info, and reset. Preferences are saved in this
+  browser only.
+- **TXT to EPUB** is now a self-contained tool with its own page, a back link
+  to all tools, and the existing detection, preview, and export unchanged. Its
+  state is kept when you visit Settings and come back.
+- Tools are registered in one list, so a new tool is one component plus one
+  entry. Text to PDF and EPUB to TXT are listed as "Coming soon" and cannot be
+  opened until they exist.
+- Unknown addresses show a friendly page instead of a blank screen. The page
+  title updates for each view.
 
 ## 1.3.4 — 2026-10-25
 **Detection modes fixes and premium redesign**
@@ -112,10 +133,3 @@ not APK releases.
 - **Version code:** 1
 - Added the initial converter page, React/Vite setup, styling, static assets,
   and dependencies.
-
-## Versioning note
-
-The repository has no Android `versionName`, `versionCode`, or release tags.
-The version codes here are a proposed, increasing sequence assigned to the converter-changing
-commits. Publish-only commits and changes outside the
-converter are not counted as new converter versions.

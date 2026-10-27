@@ -6,7 +6,7 @@
 
 **Turn a plain-text novel into a chapter-organized EPUB, entirely in your browser.**
 
-![Version](https://img.shields.io/badge/version-1.3.4-8EB69B?style=flat-square)
+![Version](https://img.shields.io/badge/version-1.3.5-8EB69B?style=flat-square)
 ![Privacy](https://img.shields.io/badge/privacy-no%20server%20upload-8EB69B?style=flat-square)
 ![Output](https://img.shields.io/badge/output-EPUB-DAF1DE?style=flat-square)
 ![Built with](https://img.shields.io/badge/built%20with-React%20%C2%B7%20Vite%20%C2%B7%20Tailwind-051F20?style=flat-square)
@@ -23,7 +23,23 @@ Leafline reads a `.txt` novel, finds where the chapters begin, shows you a calm 
 
 Your text and cover image are processed locally. Nothing is uploaded to a server while the EPUB is assembled.
 
-## Features
+## Tools
+
+Leafline is a growing set of separate tools. Each one has its own page, inputs, actions, and processing logic.
+
+| Tool | Status | Address |
+| --- | --- | --- |
+| **TXT to EPUB** | Available | `#/tools/txt-to-epub` |
+| **Text to PDF** | Planned | — |
+| **EPUB to TXT** | Planned | — |
+
+**Navigation.** Two destinations are always available: **Home** (the tools catalogue) and **Settings** (website-wide preferences). Routes use the URL hash, so the site works on any static host, including GitHub Pages, and browser back/forward and direct links work.
+
+**Adding a tool.** Build the tool as its own component, then add one entry to the `LF_TOOLS` registry in `index.html`. Set `status: "available"` to make it openable; `"soon"` lists it without a link.
+
+## TXT to EPUB
+
+### Features
 
 - **Smart chapter detection** — recognizes Chinese headings (`第一百二十章`, including Chinese numerals) and English headings (`Chapter 12`).
 - **Six detection methods** — Auto, Chinese chapters, English chapters, Separators, Fixed lines, and Manual.
@@ -36,15 +52,15 @@ Your text and cover image are processed locally. Nothing is uploaded to a server
 - **Keeps everything** — text before the first chapter heading is preserved as a "Front matter" section, and a table of contents at the top of the file is not mistaken for the chapters.
 - **Private by design** — parsing and EPUB creation run in your browser, with no account and no upload.
 
-## Quick Start
+### Quick Start
 
-1. Open the app (or `index.html` locally).
+1. Open the app (or `index.html` locally), then choose **TXT to EPUB** on the Home page.
 2. Drop your `.txt` novel onto the page, or choose a file from your device.
 3. Pick a **detection method** and review the **chapter preview**.
 4. Fill in the **book title**, **author**, and **language**, and optionally add a **cover image**.
 5. Click create, then download your EPUB.
 
-## Detection Methods
+### Detection Methods
 
 | Method | Best for |
 | --- | --- |
@@ -104,7 +120,7 @@ txt-to-epub-converter/
 
 ## Changelog
 
-See [CHANGELOG.md](CHANGELOG.md). The current release is **1.3.4 — Detection modes fixes and premium redesign**.
+See [CHANGELOG.md](CHANGELOG.md). The current release is **1.3.5 — Website redesign and fast navigation**.
 
 ## Contributing
 
