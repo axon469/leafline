@@ -9,7 +9,7 @@
 ![Version](https://img.shields.io/badge/version-1.3.5-8EB69B?style=flat-square)
 ![Privacy](https://img.shields.io/badge/privacy-no%20server%20upload-8EB69B?style=flat-square)
 ![Output](https://img.shields.io/badge/output-EPUB-DAF1DE?style=flat-square)
-![Built with](https://img.shields.io/badge/built%20with-React%20%C2%B7%20Vite%20%C2%B7%20Tailwind-051F20?style=flat-square)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 
 [Live Demo](https://<your-username>.github.io/txt-to-epub-converter/) · [Changelog](CHANGELOG.md) · [Report a Bug](../../issues)
 
@@ -88,6 +88,8 @@ python3 -m http.server 8000
 
 Because the app is a single static page, it works on any static host.
 
+# Tech Stack:
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 
 ## Repository Structure
 
