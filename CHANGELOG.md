@@ -1,15 +1,36 @@
 # Changelog
 
-This website has **9 identifiable converter versions** in the available commit
+This website has **10 identifiable converter versions** in the available commit
 history. Version names and Android-style version codes below are a proposed
 mapping; this is a React/Vite website, not a native Android app, so these are
 not APK releases.
 
-## 1.3.5 Alpha 1 — 2026-10-28
+## 1.3.6 — 2026-10-28
+**Cleanup and default theme**
+- **Version code:** 10
+- Removed the Text to PDF and EPUB to TXT placeholder cards. Home now lists
+  only tools that are available.
+- Home is now an expandable catalogue. Tools are grouped by category, each
+  category collapses and expands, and a new tool is added by one registry entry
+  without changing the navigation.
+- Removed decorative text: the Home introduction, the "Detection modes"
+  section, the tool page's marketing heading, the footer slogan, and the brand
+  tagline. The tool page now has a plain title and a back link.
+- Reset the whole website to the default light theme with system fonts. The
+  premium colors, display fonts, gradient buttons, and glass navigation were
+  replaced with plain defaults, so they can return later as Settings options.
+- Fonts are no longer loaded from Google Fonts, so the page makes no external
+  requests.
+- The logo and icons are now read from the `assets` folder, with a built-in
+  fallback logo if the file is missing.
+- Settings keeps text size, reduced motion, privacy, and version, without the
+  introduction text.
+
+## 1.3.5 — 2026-10-28
 **Website redesign and fast navigation**
 - **Version code:** 9
 - Leafline is now a multi-tool website. A new **Home** page lists every tool as
-  a card; each tool lives at its own address (`#/tools`) so links,
+  a card; each tool lives at its own address (`#/tools/txt-to-epub`) so links,
   refresh, and the browser's back and forward buttons all work.
 - Added persistent two-destination navigation: **Home** and **Settings**. It is
   a floating bar at the top on desktop and a bottom tab dock on mobile, with
@@ -21,7 +42,7 @@ not APK releases.
   to all tools, and the existing detection, preview, and export unchanged. Its
   state is kept when you visit Settings and come back.
 - Tools are registered in one list, so a new tool is one component plus one
-  entry. EPUB to TXT is listed as "Coming soon" and cannot be
+  entry. Text to PDF and EPUB to TXT are listed as "Coming soon" and cannot be
   opened until they exist.
 - Unknown addresses show a friendly page instead of a blank screen. The page
   title updates for each view.

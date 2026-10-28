@@ -6,12 +6,12 @@
 
 **Turn a plain-text novel into a chapter-organized EPUB, entirely in your browser.**
 
-![Version](https://img.shields.io/badge/version-1.3.5-e4461e)
-![Tools](https://img.shields.io/badge/tools-241-blue)
-![Privacy](https://img.shields.io/badge/privacy-100%25%20local-2ea44f)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![Version](https://img.shields.io/badge/version-1.3.6-8EB69B?style=flat-square)
+![Privacy](https://img.shields.io/badge/privacy-no%20server%20upload-8EB69B?style=flat-square)
+![Output](https://img.shields.io/badge/output-EPUB-DAF1DE?style=flat-square)
+![Built with](https://img.shields.io/badge/built%20with-React%20%C2%B7%20Vite%20%C2%B7%20Tailwind-051F20?style=flat-square)
 
-[Website](https://axon469.github.io/leafline/) · [Changelog](CHANGELOG.md) · [Report a Bug](../../issues)
+[Live Demo](https://<your-username>.github.io/txt-to-epub-converter/) · [Changelog](CHANGELOG.md) · [Report a Bug](../../issues)
 
 </div>
 
@@ -30,8 +30,10 @@ Leafline is a growing set of separate tools. Each one has its own page, inputs, 
 | Tool | Status | Address |
 | --- | --- | --- |
 | **TXT to EPUB** | Available | `#/tools/txt-to-epub` |
-| **EPUB to TXT** | Planned | — |
 
+**Navigation.** Two destinations are always available: **Home** (the tools catalogue) and **Settings** (website-wide preferences). Routes use the URL hash, so the site works on any static host, including GitHub Pages, and browser back/forward and direct links work.
+
+**Adding a tool.** Build the tool as its own component, then add one entry to the `LF_TOOLS` registry in `index.html`. Give it a `category`: Home groups tools by category in an expandable catalogue, and each tool opens at `#/tools/<id>`. Navigation does not change when tools are added.
 
 ## TXT to EPUB
 
@@ -82,37 +84,41 @@ python3 -m http.server 8000
 # then visit http://localhost:8000
 ```
 
-> Fonts (Manrope, Cormorant Garamond, DM Mono, Noto Sans SC) load from Google Fonts. Conversion itself does not need a network connection.
+> The page uses your system's default fonts and makes no external requests, so conversion works fully offline. The logo and icons are read from the `assets` folder.
 
 ## Deploy
 
 Because the app is a single static page, it works on any static host.
 
-# Tech Stack:
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+**GitHub Pages:** go to **Settings → Pages**, choose your default branch and the `/ (root)` folder, then save.
 
 ## Repository Structure
 
 ```text
 txt-to-epub-converter/
-├── index.html       
-├── CHANGELOG.md      # Version history
+├── index.html          # The converter (single-file production build)
+├── CHANGELOG.md        # Version history
 ├── README.md
 └── assets/
-    ├── logo.svg                
-    ├── logo.png                
-    ├── logo-wordmark.svg       
+    ├── logo.svg                # App logo (vector)
+    ├── logo.png                # App logo (512 × 512)
+    ├── logo-wordmark.svg       # Logo with name, horizontal layout
     ├── logo-wordmark.png
     ├── favicon.svg
     ├── favicon-64.png
-    ├── apple-touch-icon.png    
-    └── social-preview.png      
+    ├── apple-touch-icon.png    # 180 × 180 home-screen icon
+    └── social-preview.png      # 1280 × 640 repository social image
 ```
 
+## Tech Stack
+
+- **React** and **Vite** for the interface and build
+- **Tailwind CSS** for styling
+- System default fonts, with a default light theme
 
 ## Changelog
 
-See [CHANGELOG.md](CHANGELOG.md). The current release is **1.3.5 Alpha 1 — Website redesign and fast navigation**.
+See [CHANGELOG.md](CHANGELOG.md). The current release is **1.3.6 — Cleanup and default theme**.
 
 ## Contributing
 
