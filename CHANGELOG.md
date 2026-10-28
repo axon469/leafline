@@ -1,9 +1,38 @@
 # Changelog
 
-This website has **10 identifiable converter versions** in the available commit
+This website has **11 identifiable converter versions** in the available commit
 history. Version names and Android-style version codes below are a proposed
 mapping; this is a React/Vite website, not a native Android app, so these are
 not APK releases.
+
+## 1.3.7 — 2026-10-28
+**Settings page and themes**
+- **Version code:** 11
+- Settings is now organized into sections instead of one long list:
+  **Appearance**, **Animations**, **File handling**, and **About**. On desktop a
+  side menu sits next to the section; on mobile Settings opens as a list and
+  each section is its own page with a back link. Every section has its own
+  address (`#/settings/appearance`, and so on), so links and the browser's back
+  button work.
+- Added a **Theme** selector inside Appearance with four options: **Default**
+  (follows the device's light or dark setting), **Light Mode**, **Dark Mode**,
+  and **AMOLED Dark** (pure black). The whole website changes immediately,
+  including navigation, tool cards, inputs, settings, and the converter.
+- The saved theme is applied before the page first paints, so there is no flash
+  of the wrong theme on reload. Themes are defined by color tokens, so a new
+  theme is one registry entry plus one block of tokens.
+- **Animations** can follow the device, be on, or be reduced.
+- **File handling** sets starting values for the TXT to EPUB Converter:
+  detection method, lines per chapter, minimum blank lines, and book language.
+  Changing a default also updates the open converter.
+- **About** holds the version, privacy note, and the **Catalogue** options
+  (expanded or collapsed categories, cards or list layout) plus a list of
+  available tools.
+- Settings are saved in the browser and restored after a refresh. Each value is
+  checked on load, so one invalid value never resets the others. Number fields
+  show an error and keep the previous value. Reset asks for confirmation. If
+  the browser blocks storage, a notice explains that settings apply only until
+  the tab is closed. Changes also sync between open tabs.
 
 ## 1.3.6 — 2026-10-28
 **Cleanup and default theme**
