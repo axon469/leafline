@@ -6,12 +6,12 @@
 
 **Turn a plain-text novel into a chapter-organized EPUB, entirely in your browser.**
 
-![Version](https://img.shields.io/badge/version-1.3.5-8EB69B?style=flat-square)
-![Privacy](https://img.shields.io/badge/privacy-no%20server%20upload-8EB69B?style=flat-square)
-![Output](https://img.shields.io/badge/output-EPUB-DAF1DE?style=flat-square)
+![Version](https://img.shields.io/badge/version-1.3.5-e4461e)
+![Tools](https://img.shields.io/badge/tools-241-blue)
+![Privacy](https://img.shields.io/badge/privacy-100%25%20local-2ea44f)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 
-[Live Demo](https://<your-username>.github.io/txt-to-epub-converter/) · [Changelog](CHANGELOG.md) · [Report a Bug](../../issues)
+[Website](https://<your-username>.github.io/txt-to-epub-converter/) · [Changelog](CHANGELOG.md) · [Report a Bug](../../issues)
 
 </div>
 
