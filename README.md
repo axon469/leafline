@@ -112,7 +112,7 @@ txt-to-epub-converter/
 
 ## Changelog
 
-See [CHANGELOG.md](CHANGELOG.md). The current release is **1.3.5 Alpha 1 — Website redesign and fast navigation**.
+See [CHANGELOG.md](CHANGELOG.md). The current release is **1.3.6 — Cleanup and default theme**.
 
 ## Contributing
 
