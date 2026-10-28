@@ -5,11 +5,11 @@ history. Version names and Android-style version codes below are a proposed
 mapping; this is a React/Vite website, not a native Android app, so these are
 not APK releases.
 
-## 1.3.5 — 2026-10-28
+## 1.3.5 Alpha 1 — 2026-10-28
 **Website redesign and fast navigation**
 - **Version code:** 9
 - Leafline is now a multi-tool website. A new **Home** page lists every tool as
-  a card; each tool lives at its own address (`#/tools/txt-to-epub`) so links,
+  a card; each tool lives at its own address (`#/tools`) so links,
   refresh, and the browser's back and forward buttons all work.
 - Added persistent two-destination navigation: **Home** and **Settings**. It is
   a floating bar at the top on desktop and a bottom tab dock on mobile, with
@@ -21,7 +21,7 @@ not APK releases.
   to all tools, and the existing detection, preview, and export unchanged. Its
   state is kept when you visit Settings and come back.
 - Tools are registered in one list, so a new tool is one component plus one
-  entry. Text to PDF and EPUB to TXT are listed as "Coming soon" and cannot be
+  entry. EPUB to TXT is listed as "Coming soon" and cannot be
   opened until they exist.
 - Unknown addresses show a friendly page instead of a blank screen. The page
   title updates for each view.
