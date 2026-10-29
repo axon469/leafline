@@ -1,9 +1,34 @@
 # Changelog
 
-This website has **11 identifiable converter versions** in the available commit
+This website has **12 identifiable converter versions** in the available commit
 history. Version names and Android-style version codes below are a proposed
 mapping; this is a React/Vite website, not a native Android app, so these are
 not APK releases.
+
+## 1.3.8 — 2026-10-28
+**Settings reorganized, Light Mode, and download folder**
+- **Version code:** 12
+- **Light Mode** now follows the brief exactly: a white background, black text,
+  and white buttons with clear dark outlines. Selected options (navigation,
+  segmented controls, theme and detection choices) are shown with a heavy black
+  outline.
+- Removed the "Default" theme. The Theme selector now offers **Light Mode**,
+  **Dark Mode**, and **AMOLED Dark**, with a check mark on the selected one.
+  Light is the starting theme, and an older saved "Default" choice becomes
+  Light.
+- Added a **Design style** section to Appearance: Standard (current), and
+  "Coming soon" placeholders for Material You and Liquid Glass.
+- Moved **Text size** from Appearance to Animations.
+- Moved the **Catalogue** options from About to Animations and added a live
+  preview that updates as soon as you change the options. Cards are now
+  vertical tiles in a grid, and List is a compact row list, so the difference
+  is easy to see.
+- **File handling** has a new **Download folder** setting: use the browser's
+  default, ask every time, or always save to a folder you choose. Browsers that
+  do not allow websites to pick a folder (most phones, Firefox, and Safari)
+  show a clear note and keep using the normal download.
+- **About** has a new **Version history** page that lists every release from
+  `CHANGELOG.md`.
 
 ## 1.3.7 — 2026-10-28
 **Settings page and themes**
