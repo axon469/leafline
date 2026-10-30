@@ -112,7 +112,7 @@ txt-to-epub-converter/
 
 ## Changelog
 
-See [CHANGELOG.md](CHANGELOG.md). The current release is **1.3.8 — Settings reorganized, Light Mode, and download folder**.
+See [CHANGELOG.md](CHANGELOG.md). The current release is **1.3.9 — Accent colors and Material You**.
 ## Contributing
 
 Issues and suggestions are welcome. If you found a book that Leafline split badly, open an issue with a short sample of its chapter headings (no need to share the whole text).
