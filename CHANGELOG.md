@@ -1,9 +1,31 @@
 # Changelog
 
-This website has **12 identifiable converter versions** in the available commit
+This website has **13 identifiable converter versions** in the available commit
 history. Version names and Android-style version codes below are a proposed
 mapping; this is a React/Vite website, not a native Android app, so these are
 not APK releases.
+
+## 1.3.9 — 2026-10-29
+**Accent colors and Material You**
+- **Version code:** 13
+- **File handling** now contains only the **Download folder** setting. The
+  converter defaults section was removed, so the converter always starts with
+  Auto detection, 40 lines per chapter, 2 blank lines, and Chinese (Simplified).
+- Added **Accent color** at the bottom of **Design style**: ten palettes, each
+  shown as four large, slightly overlapping circles in its exact colors, with
+  its name and a clear selected indicator. With Standard the options are
+  frosted-glass capsules like the reference; with Material You they are tonal
+  cards. Every option works with the keyboard.
+- Choosing a palette recolors buttons, navigation, links, cards, icons, borders,
+  and selected states across the whole website at once, in Light, Dark, and
+  AMOLED. Colors are adjusted only as much as needed to keep text readable, and
+  the swatches always show the exact palette colors. **Neon Galaxy** is the
+  default. The choice is saved, restored after a refresh, and applied before the
+  page first paints.
+- **Material You** is now a selectable design style: tonal surfaces tinted by
+  your accent color, large rounded cards, pill buttons, filled input fields, and
+  a tonal indicator in navigation and menus. It works with Light, Dark, AMOLED,
+  and every accent palette. Liquid Glass is still marked "Coming soon".
 
 ## 1.3.8 — 2026-10-28
 **Settings reorganized, Light Mode, and download folder**
